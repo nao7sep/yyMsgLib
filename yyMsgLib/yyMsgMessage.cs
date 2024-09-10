@@ -22,7 +22,7 @@
         public int? PinnedByUserId { get; set; }
         public Guid PinnedByUserGuid { get; set; }
 
-        public List <yyMsgAttachment> Attachments { get; init; } = [];
+        public List <yyMsgFile> Attachments { get; init; } = [];
         public int AttachmentCount { get; set; }
     }
 }
