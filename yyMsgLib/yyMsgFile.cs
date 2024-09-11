@@ -1,4 +1,7 @@
-﻿namespace yyMsgLib
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats;
+
+namespace yyMsgLib
 {
     public class yyMsgFile
     {
@@ -23,6 +26,10 @@
         public long Length { get; init; }
 
         public bool IsImage { get; init; }
-        public yyMsgImage? Image { get; init; }
+        public IImageFormat? ImageFormat { get; init; }
+        public Size? ImageSize { get; init; }
+
+        public List <yyMsgResizedImageFile>? ResizedImages { get; init; }
+        public int? ResizedImageCount { get; init; }
     }
 }
