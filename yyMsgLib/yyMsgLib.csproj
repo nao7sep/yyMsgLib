@@ -22,7 +22,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+        <ProjectReference Include="..\..\yyWebLib\yyWebLib\yyWebLib.csproj" />
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
     </ItemGroup>
 
 </Project>

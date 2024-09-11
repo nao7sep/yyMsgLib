@@ -14,7 +14,7 @@
         public int? CreatedByUserId { get; init; }
         public Guid CreatedByUserGuid { get; init; }
 
-        public required string Content { get; set; } // Updatable
+        public required string Content { get; set; }
 
         public bool IsPinned { get; set; }
         public DateTime? PinnedAtUtc { get; set; }
